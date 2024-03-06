@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-3q&^6i8e-*l^wjdkg%pz78e8^u(geiefsox_m-6*r2&7r_e*yb"
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') or "django-insecure-3q&^6i8e-*l^wjdkg%pz78e8^u(geiefsox_m-6*r2&7r_e*yb"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,6 +80,17 @@ DATABASES = {
     }
 }
 
+# Postgres configuration in case we need to use a database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('DJANGO_POSTGRES_DATABASE') or "biz24",
+#         'USER': os.environ.get('DJANGO_POSTGRES_USER') or "postgres",
+#         'PASSWORD': os.environ.get('DJANGO_POSTGRES_PASSWORD') or "",
+#         'HOST': os.environ.get('DJANGO_POSTGRES_HOST') or "127.0.0.1",
+#         'PORT': int(os.environ.get('DJANGO_POSTGRES_PORT') or "5432"),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
