@@ -1076,16 +1076,6 @@ input[type="range"]::-ms-fill-lower {
   margin: 1.25rem !important;
 }
 
-.mx-9 {
-  margin-left: 2.25rem !important;
-  margin-right: 2.25rem !important;
-}
-
-.my-14 {
-  margin-top: 3.5rem !important;
-  margin-bottom: 3.5rem !important;
-}
-
 .mx-2 {
   margin-left: 0.5rem !important;
   margin-right: 0.5rem !important;
@@ -1094,6 +1084,16 @@ input[type="range"]::-ms-fill-lower {
 .mx-4 {
   margin-left: 1rem !important;
   margin-right: 1rem !important;
+}
+
+.mx-9 {
+  margin-left: 2.25rem !important;
+  margin-right: 2.25rem !important;
+}
+
+.my-14 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
 }
 
 .mb-20 {
@@ -1114,10 +1114,6 @@ input[type="range"]::-ms-fill-lower {
 
 .mb-\[60px\] {
   margin-bottom: 60px !important;
-}
-
-.mr-4 {
-  margin-right: 1rem !important;
 }
 
 .mt-10 {
@@ -1491,11 +1487,6 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 1.5rem !important;
 }
 
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem !important;
 }
@@ -1517,6 +1508,21 @@ input[type="range"]::-ms-fill-lower {
 .text-4xl {
   font-size: 2.25rem !important;
   line-height: 2.5rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.text-6xl {
+  font-size: 3.75rem !important;
+  line-height: 1 !important;
 }
 
 .leading-6 {
@@ -1752,16 +1758,8 @@ input[type="range"]::-ms-fill-lower {
     margin-right: 0.5rem !important;
   }
 
-  .md\:mr-8 {
-    margin-right: 2rem !important;
-  }
-
   .md\:h-96 {
     height: 24rem !important;
-  }
-
-  .md\:flex-row {
-    flex-direction: row !important;
   }
 
   .md\:px-0 {
@@ -1791,6 +1789,16 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:text-6xl {
     font-size: 3.75rem !important;
+    line-height: 1 !important;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem !important;
     line-height: 1 !important;
   }
 }

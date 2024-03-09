@@ -11,10 +11,10 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("eventCountdownDay").innerHTML = days.toString();
-  document.getElementById("eventCountdownHour").innerHTML = hours.toString();
-  document.getElementById("eventCountdownMinute").innerHTML = minutes.toString();
-  document.getElementById("eventCountdownSecond").innerHTML = seconds.toString();
+  document.getElementById("eventCountdownDay").innerHTML = days.toString().padStart(2,0);
+  document.getElementById("eventCountdownHour").innerHTML = hours.toString().padStart(2,0);
+  document.getElementById("eventCountdownMinute").innerHTML = minutes.toString().padStart(2,0);
+  document.getElementById("eventCountdownSecond").innerHTML = seconds.toString().padStart(2,0);
 
   if (distance < 0) {
     clearInterval(x);
