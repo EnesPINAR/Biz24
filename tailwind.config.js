@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     'prettier-plugin-tailwindcss',
     require('flowbite/plugin'),
-],
+  ],
+  important: true,
 }
 
