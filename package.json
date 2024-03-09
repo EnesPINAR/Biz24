@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "flowbite": "^2.3.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./main/static/css/tw-i.css -o ./main/static/css/tw.css --watch"
+  }
+}
