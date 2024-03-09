@@ -18,7 +18,7 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("eventCountdownTitle").style.display = "none";
-    document.getElementById("eventCountdown").innerHTML = "Etkinlik Başladı!";
+    document.getElementById("eventCountdownTitle").innerHTML = "Etkinlik Başladı!";
+    document.getElementById("eventCountdown").classList.add("hidden");
   }
 }, 1000);

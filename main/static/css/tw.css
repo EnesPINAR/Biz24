@@ -1510,19 +1510,14 @@ input[type="range"]::-ms-fill-lower {
   line-height: 2.5rem !important;
 }
 
-.text-xl {
-  font-size: 1.25rem !important;
-  line-height: 1.75rem !important;
+.text-6xl {
+  font-size: 3.75rem !important;
+  line-height: 1 !important;
 }
 
 .text-xs {
   font-size: 0.75rem !important;
   line-height: 1rem !important;
-}
-
-.text-6xl {
-  font-size: 3.75rem !important;
-  line-height: 1 !important;
 }
 
 .leading-6 {
@@ -1772,6 +1767,11 @@ input[type="range"]::-ms-fill-lower {
     padding-right: 4rem !important;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem !important;
     line-height: 2.25rem !important;
@@ -1790,11 +1790,6 @@ input[type="range"]::-ms-fill-lower {
   .md\:text-6xl {
     font-size: 3.75rem !important;
     line-height: 1 !important;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem !important;
-    line-height: 2rem !important;
   }
 
   .md\:text-8xl {
