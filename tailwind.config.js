@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     "./main/templates/*.html",
@@ -8,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         "footer": "#1D1D1D",
+      },
+      fontFamily: {
+        'sans': ['"olneylight"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

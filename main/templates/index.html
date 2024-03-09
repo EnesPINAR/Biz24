@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr" class="overflow-x-hidden">
+<html lang="tr" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#181818" />
@@ -14,16 +14,16 @@
   </head>
   <body class="relative overflow-x-hidden text-white bg-neutral-900">
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
-    <nav class="flex justify-between items-center py-6 px-8 h-[100px] bg-zinc-500 bg-opacity-5">
+    <nav class="flex justify-between items-center py-6 px-8 h-[10vh] bg-zinc-500 bg-opacity-5">
       <a>BİZ2024</a>
       <a class="shrink-0" href="">
         <img src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">  
       </a>
     </nav>
-    <section class="flex items-center justify-center h-[90vh]">
+    <section class="flex flex-col items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
         <h1 class="text-3xl mb-[60px] md:text-5xl">BİZ2024</h1>
-        <h1 class="mb-4 text-3xl md:text-5xl" id="eventCountdownTitle">Etkinliğe Kalan</h1>
+        <h1 class="text-3xl md:text-5xl" id="eventCountdownTitle">Etkinliğe Kalan</h1>
         <div class="flex flex-row items-center px-4" id="eventCountdown">
             <div class="flex flex-col">
                 <p class="text-6xl text-center md:text-8xl md:mr-2" id="eventCountdownDay">00</p>
@@ -46,8 +46,12 @@
             </div>
         </div>
       </div>
+      <a class="relative flex flex-col items-center top-[10vh] justify-evenly" href="#content">
+          <p class="mb-4 text-sm lg:invisible">Daha fazlası için kaydır</p>
+          <svg class="h-auto w-9" width="114.42" height="61.12" viewBox="0 0 30.27 16.17" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m92.12 151.59 14.1 13.98 14.17-14.17" transform="translate(-91.12 -150.4)"/></svg>
+      </a>
     </section>
-    <section class="my-14">
+    <section class="my-14" id="content">
       <h1 class="pb-10 text-3xl text-center md:text-4xl">Duyurular</h1>
       <div class="relative w-full" data-carousel="slide">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -180,22 +184,21 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
       </div>
     </section>
-    <footer class="w-screen h-96 sm:h-72 bg-footer">
+    <footer class="w-screen py-6 h-96 md:h-72 bg-footer">
       <div class="flex flex-wrap items-center justify-around">
         <div class="mt-5 mx-9">
-          <p class="text-center">Sosyal Medya</p>
           <div class="flex justify-around">
             <a class="m-3" href="">
-              <img src="{% static "img/x.svg" %}" alt="X">
+              <img class="w-12 h-12" src="{% static "img/x.svg" %}" alt="X">
             </a>
             <a class="m-3" href="">
-              <img src="{% static "img/instagram.svg" %}" alt="Instagram">
+              <img class="w-12 h-12" src="{% static "img/instagram.svg" %}" alt="Instagram">
             </a>
             <a class="m-3" href="">
-              <img src="{% static "img/linkedin.svg" %}" alt="LinkedIn">
+              <img class="w-12 h-12" src="{% static "img/linkedin.svg" %}" alt="LinkedIn">
             </a>
             <a class="m-3" href="">
-              <img src="{% static "img/youtube.svg" %}" alt="Youtube">
+              <img class="w-12 h-12" src="{% static "img/youtube.svg" %}" alt="Youtube">
             </a>
           </div>
         </div>
