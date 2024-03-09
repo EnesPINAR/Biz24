@@ -12,7 +12,7 @@
       <script defer src="{% static "js/countdown.js" %}"></script>
     <title>BİZ2024</title>
   </head>
-  <body class="bg-neutral-900 text-white relative overflow-x-hidden">
+  <body class="relative overflow-x-hidden text-white bg-neutral-900">
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
     <nav class="flex justify-between items-center py-6 px-8 h-[100px] bg-zinc-500 bg-opacity-5">
       <a>BİZ2024</a>
@@ -23,32 +23,32 @@
     <section class="flex items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
         <h1 class="text-3xl mb-[60px] md:text-5xl">BİZ2024</h1>
-        <h1 class="text-3xl md:text-5xl mb-4" id="eventCountdownTitle">Etkinliğe Kalan</h1>
+        <h1 class="mb-4 text-3xl md:text-5xl" id="eventCountdownTitle">Etkinliğe Kalan</h1>
         <div class="flex flex-row px-4">
             <div class="flex flex-col">
-                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownDay"></p>
-                <p class="text-3xl md:text-5xl text-center">gün</p>
+                <p class="text-3xl text-center md:text-5xl md:mr-2" id="eventCountdownDay"></p>
+                <p class="text-3xl text-center md:text-5xl">gün</p>
             </div>
-            <p class="text-4xl md:text-6xl text-center mx-2 md:mx-4">:</p>
+            <p class="mx-2 text-4xl text-center md:text-6xl md:mx-4">:</p>
             <div class="flex flex-col">
-                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownHour"></p>
-                <p class="text-3xl md:text-5xl text-center">saat</p>
+                <p class="text-3xl text-center md:text-5xl md:mr-2" id="eventCountdownHour"></p>
+                <p class="text-3xl text-center md:text-5xl">saat</p>
             </div>
-            <p class="text-4xl md:text-6xl text-center mx-2 md:mx-4">:</p>
+            <p class="mx-2 text-4xl text-center md:text-6xl md:mx-4">:</p>
             <div class="flex flex-col">
-                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownMinute"></p>
-                <p class="text-3xl md:text-5xl text-center">dakika</p>
+                <p class="text-3xl text-center md:text-5xl md:mr-2" id="eventCountdownMinute"></p>
+                <p class="text-3xl text-center md:text-5xl">dakika</p>
             </div>
-            <p class="text-4xl md:text-6xl text-center mx-2 md:mx-4">:</p>
+            <p class="mx-2 text-4xl text-center md:text-6xl md:mx-4">:</p>
             <div class="flex flex-col">
-                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownSecond"></p>
-                <p class="text-3xl md:text-5xl text-center">saniye</p>
+                <p class="text-3xl text-center md:text-5xl md:mr-2" id="eventCountdownSecond"></p>
+                <p class="text-3xl text-center md:text-5xl">saniye</p>
             </div>
         </div>
       </div>
     </section>
     <section class="my-14">
-      <h1 class="text-3xl md:text-4xl text-center pb-10">Duyurular</h1>
+      <h1 class="pb-10 text-3xl text-center md:text-4xl">Duyurular</h1>
       <div class="relative w-full" data-carousel="slide">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
@@ -67,14 +67,14 @@
                   <img src="{% static "img/tubit-logo.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
           </div>
-          <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+          <div class="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
               <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="0"></button>
               <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="1"></button>
               <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="2"></button>
               <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="3"></button>
               <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="4"></button>
           </div>
-          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
               <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                   <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -82,7 +82,7 @@
                   <span class="sr-only">Önceki</span>
               </span>
           </button>
-          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
               <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                   <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
@@ -93,28 +93,28 @@
       </div>
     </section>
     <section class="my-14">
-      <h1 class="text-3xl md:text-4xl text-center text-wrap px-10 md:px-0 pb-10">Önceki Etkinliklerimizden</h1>
+      <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl text-wrap md:px-0">Önceki Etkinliklerimizden</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
@@ -122,7 +122,7 @@
       </div>
     </section>
     <section class="my-14">
-      <h1 class="text-3xl md:text-4xl text-center pb-10">TÜBİT Hakkında</h1>
+      <h1 class="pb-10 text-3xl text-center md:text-4xl">TÜBİT Hakkında</h1>
       <p class="px-10 md:px-16">Nemo error dolores rerum aspernatur et repellat assumenda quae.  Dolor voluptas nostrum autem eaque laudantium voluptates aut.  Reprehenderit autem quisquam ut. Excepturi iste vel deserunt. Veniam  ipsa optio qui ex fugit iure recusandae. Non rem hic commodi autem  ratione reiciendis.
 Molestiae voluptate voluptatem doloribus. Reprehenderit eveniet  libero sunt asperiores dolorem fugiat cumque nulla. Rerum incidunt at  dicta ea porro. Ipsa ut vel provident eveniet dolorem et rem aperiam.
 Qui accusamus delectus qui. Provident quam quia aut. A  explicabo totam mollitia quia. Quo iure omnis soluta esse voluptatibus  vel totam harum. Cupiditate et maiores totam quisquam sint dolorum  debitis.
@@ -131,50 +131,50 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       </p>
     </section>
     <section class="my-14">
-      <h1 class="text-3xl md:text-4xl text-center px-10 md:px-0 pb-10">Ekibimiz</h1>
+      <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Ekibimiz</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
         <div class="m-5">
-          <svg class="rounded-full mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg class="mb-4 rounded-full" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#FFFFFF"></rect>
           </svg>
           <p class="text-center">İsim SOYİSİM<br/>Ünvan</p>
         </div>
       </div>
     </section>
-    <section class="mt-14 mb-20">
-      <h1 class="text-3xl md:text-4xl text-center px-10 md:px-0 pb-10">Sponsorlar</h1>
-      <h1 class="text-yellow-400 text-2xl md:text-3xl text-center px-10 md:px-0 pb-10">Altın</h1>
-      <div class="flex flex-wrap items-center justify-evenly mb-8">
+    <section class="mb-20 mt-14">
+      <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Sponsorlar</h1>
+      <h1 class="px-10 pb-10 text-2xl text-center text-yellow-400 md:text-3xl md:px-0">Altın</h1>
+      <div class="flex flex-wrap items-center mb-8 justify-evenly">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
       </div>
-      <h1 class="text-zinc-400 text-2xl md:text-3xl text-center px-10 md:px-0 pb-10">Gümüş</h1>
-      <div class="flex flex-wrap items-center justify-evenly mb-8">
+      <h1 class="px-10 pb-10 text-2xl text-center text-zinc-400 md:text-3xl md:px-0">Gümüş</h1>
+      <div class="flex flex-wrap items-center mb-8 justify-evenly">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
       </div>
-      <h1 class="text-yellow-900 text-2xl md:text-3xl text-center px-10 md:px-0 pb-10">Bronz</h1>
-      <div class="flex flex-wrap items-center justify-evenly mb-8">
+      <h1 class="px-10 pb-10 text-2xl text-center text-yellow-900 md:text-3xl md:px-0">Bronz</h1>
+      <div class="flex flex-wrap items-center mb-8 justify-evenly">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
         <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
@@ -182,7 +182,7 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
     </section>
     <footer class="w-screen h-96 sm:h-72 bg-footer">
       <div class="flex flex-wrap items-center justify-around">
-        <div class="mx-9 mt-5">
+        <div class="mt-5 mx-9">
           <p class="text-center">Sosyal Medya</p>
           <div class="flex justify-around">
             <a class="m-3" href="">
@@ -199,13 +199,13 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
             </a>
           </div>
         </div>
-        <div class="flex items-center justify-evenly mt-5 mx-9">
+        <div class="flex items-center mt-5 justify-evenly mx-9">
           <img class="w-[116px] h-[66px] m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
-          <div class="bg-white w-px h-9"></div>
+          <div class="w-px bg-white h-9"></div>
           <img class="w-[100px] h-[100px] m-5" src="{% static "img/trakya-logo.svg" %}" alt="Trakya Üniversitesi">
         </div>
       </div>
-      <p class="text-center mt-10">Tüm Hakları Saklıdır. TÜBİT 2024</p>
+      <p class="mt-10 text-center">Tüm Hakları Saklıdır. TÜBİT 2024</p>
     </footer>
     <script src="{% static "js/flowbite.min.js" %}"></script>
   </body>
