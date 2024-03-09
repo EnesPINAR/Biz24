@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static "css/flowbite.min.css" %}">
     <link rel="stylesheet" href="{% static "css/tw.css" %}">
     <link rel="stylesheet" href="{% static "css/custom.css" %}">
+      <script defer src="{% static "js/countdown.js" %}"></script>
     <title>BİZ2024</title>
   </head>
   <body class="bg-neutral-900 text-white relative overflow-x-hidden">
@@ -22,8 +23,25 @@
     <section class="flex items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
         <h1 class="text-3xl mb-[60px] md:text-5xl">BİZ2024</h1>
-        <h1 class="text-3xl md:text-5xl">Etkinliğe Kalan</h1>
-        <p class="text-6xl md:text-8xl">01:05:10</p>
+        <h1 class="text-3xl md:text-5xl mb-4" id="eventCountdownTitle">Etkinliğe Kalan</h1>
+        <div class="flex flex-row">
+            <div class="flex flex-col md:flex-row mr-4 md:mr-8">
+                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownDay"></p>
+                <p class="text-3xl md:text-5xl text-center">gün</p>
+            </div>
+            <div class="flex flex-col md:flex-row mr-4 md:mr-8">
+                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownHour"></p>
+                <p class="text-3xl md:text-5xl text-center">saat</p>
+            </div>
+            <div class="flex flex-col md:flex-row mr-4 md:mr-8">
+                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownMinute"></p>
+                <p class="text-3xl md:text-5xl text-center">dakika</p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <p class="text-3xl md:text-5xl text-center md:mr-2" id="eventCountdownSecond"></p>
+                <p class="text-3xl md:text-5xl text-center">saniye</p>
+            </div>
+        </div>
       </div>
     </section>
     <section class="my-14">
