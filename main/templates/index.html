@@ -6,19 +6,17 @@
     <meta name="description" content="BİZ2024 TÜBİT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% load static %}
-    <link rel="stylesheet" href="{% static "css/flowbite.min.css" %}">
-    <link rel="stylesheet" href="{% static "css/tw.css" %}">
-    <link rel="stylesheet" href="{% static "css/custom.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <script defer src="{% static "js/countdown.js" %}"></script>
     <title>BİZ2024</title>
   </head>
-  <body class="relative overflow-x-hidden text-white bg-neutral-900">
+  <body class="relative overflow-x-hidden text-white bg-neutral-900 font-['olneylight']">
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
     <nav class="flex justify-between items-center py-6 px-8 h-[15vh] bg-zinc-500 bg-opacity-5">
       <a href="#">
           <img src="{% static "img/biz-logo.svg" %}" alt="biz24logo" class="h-[100px]">
       </a>
-      <a class="shrink-0" href="">
+      <a class="shrink-0" href="" title="TÜBİT">
         <img src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
       </a>
     </nav>
@@ -48,7 +46,7 @@
             </div>
         </div>
       </div>
-      <a class="relative flex flex-col items-center top-[10vh] justify-evenly" href="#content">
+      <a class="relative flex flex-col items-center top-[10vh] justify-evenly" href="#content" title="Sayfanın içeriğine git">
           <p class="mb-4 text-sm lg:invisible">Daha fazlası için kaydır</p>
           <svg class="h-auto w-9" width="114.42" height="61.12" viewBox="0 0 30.27 16.17" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m92.12 151.59 14.1 13.98 14.17-14.17" transform="translate(-91.12 -150.4)"/></svg>
       </a>
@@ -74,23 +72,23 @@
               </div>
           </div>
           <div class="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
-              <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="2"></button>
-              <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="3"></button>
-              <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="4"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-label="karosel indeks butonu" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-label="karosel indeks butonu" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-label="karosel indeks butonu" data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-label="karosel indeks butonu" data-carousel-slide-to="3"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-label="karosel indeks butonu" data-carousel-slide-to="4"></button>
           </div>
           <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                   </svg>
                   <span class="sr-only">Önceki</span>
               </span>
           </button>
           <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                   </svg>
                   <span class="sr-only">Sonraki</span>
@@ -182,8 +180,8 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
     </section>
     <section class="mb-20 mt-14">
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Sponsorlar</h1>
-        <div class="w-full flex justify-center">
-            <h1 class="px-10 pb-10 text-2xl text-center bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text text-transparent md:text-3xl md:px-0 w-fit">Ana Sponsor</h1>
+        <div class="flex justify-center w-full">
+            <h1 class="px-10 pb-10 text-2xl text-center text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text md:text-3xl md:px-0 w-fit">Ana Sponsor</h1>
         </div>
         <div class="flex flex-wrap items-center mb-8 justify-evenly">
             <img class="m-5 w-[320px]" src="{% static "img/LOGO - Renkas.svg" %}" alt="renkas">
@@ -196,7 +194,7 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
         <img class="m-5 w-[320px]" src="{% static "img/LOGO - Evren Un.png" %}" alt="evren un">
       </div>
-      <h1 class="px-10 pb-10 text-2xl text-center text-yellow-900 md:text-3xl md:px-0">Bronz</h1>
+      <h1 class="px-10 pb-10 text-2xl text-center text-orange-300 md:text-3xl md:px-0">Bronz</h1>
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
         <img class="m-5 w-[320px]" src="{% static "img/LOGO - Can Medikal.png" %}" alt="can medikal">
       </div>
@@ -209,16 +207,16 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <div class="flex flex-wrap items-center justify-around">
         <div class="mt-5 mx-9">
           <div class="flex justify-around">
-            <a class="m-3" href="https://twitter.com/kycubyo_tubit">
+            <a class="m-3" href="https://twitter.com/kycubyo_tubit" title="TÜBİT Twitter sayfasını ziyaret et">
               <img class="w-12 h-12" src="{% static "img/x.svg" %}" alt="X">
             </a>
-            <a class="m-3" href="https://www.instagram.com/tubit.tu/">
+            <a class="m-3" href="https://www.instagram.com/tubit.tu/" title="TÜBİT Instagram sayfasını ziyaret et">
               <img class="w-12 h-12" src="{% static "img/instagram.svg" %}" alt="Instagram">
             </a>
-            <a class="m-3" href="https://www.linkedin.com/company/t%C3%BCbi%CC%87t/">
+            <a class="m-3" href="https://www.linkedin.com/company/t%C3%BCbi%CC%87t/" title="TÜBİT LinkedIn sayfasını ziyaret et">
               <img class="w-12 h-12" src="{% static "img/linkedin.svg" %}" alt="LinkedIn">
             </a>
-            <a class="m-3" href="https://www.youtube.com/@kycubyo_tubit">
+            <a class="m-3" href="https://www.youtube.com/@kycubyo_tubit" title="TÜBİT Youtube sayfasını ziyaret et">
               <img class="w-12 h-12" src="{% static "img/youtube.svg" %}" alt="Youtube">
             </a>
           </div>
@@ -231,6 +229,6 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       </div>
       <p class="mt-10 text-center">Tüm Hakları Saklıdır. TÜBİT 2024</p>
     </footer>
-    <script src="{% static "js/flowbite.min.js" %}"></script>
+    <script src="{% static "js/carousel.js" %}"></script>
   </body>
 </html>

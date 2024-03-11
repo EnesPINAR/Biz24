@@ -11,6 +11,7 @@
     font-family: 'olneylight';
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: url('../font/olney_light.woff2') format('woff2');
     src: url('../font/olney_light.woff') format('woff');
 }
