@@ -1956,7 +1956,14 @@ input[type="range"]::-ms-fill-lower {
   .lg\:invisible {
     visibility: hidden !important;
   }
-}
+  .focusable img{
+   transition: all .2s ease-in; 
+  }
+  
+  .focusable img:hover{ 
+      transform: scale(1.4);
+  }
+} 
 
 .rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
   --tw-rotate: 180deg !important;
@@ -1966,3 +1973,4 @@ input[type="range"]::-ms-fill-lower {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1 !important;
 }
+
