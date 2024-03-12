@@ -731,6 +731,11 @@ img {
     60px !important;
 }
 
+.ml-2 {
+    margin-left:
+    0.5rem !important;
+}
+
 .mr-5 {
     margin-right:
     1.25rem !important;
@@ -749,11 +754,6 @@ img {
 .mt-5 {
     margin-top:
     1.25rem !important;
-}
-
-.ml-2 {
-    margin-left:
-    0.5rem !important;
 }
 
 .block {
@@ -1186,34 +1186,14 @@ img {
     0.05 !important;
 }
 
-.bg-gradient-to-r {
-    background-image:
-    linear-gradient(to right, var(--tw-gradient-stops)) !important;
-}
-
-.bg-\[url\(img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\/img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(./img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\.\/img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(../img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\.\/img\/website\/altigen_acik\.svg\)\] {
-    background-image:
-    url(../img/website/altigen_acik.svg) !important;
-}
-
 .bg-\[url\(\.\.\/img\/website\/altigen_koyu\.svg\)\] {
     background-image:
     url(../img/website/altigen_koyu.svg) !important;
+}
+
+.bg-gradient-to-r {
+    background-image:
+    linear-gradient(to right, var(--tw-gradient-stops)) !important;
 }
 
 .from-purple-500 {
@@ -1398,15 +1378,6 @@ img {
     #171717 !important;
 }
 
-.transition-transform {
-    transition-property:
-    transform !important;
-    transition-timing-function:
-    cubic-bezier(0.4, 0, 0.2, 1) !important;
-    transition-duration:
-    150ms !important;
-}
-
 .transition-all {
     transition-property:
     all !important;
@@ -1416,9 +1387,13 @@ img {
     150ms !important;
 }
 
-.duration-700 {
+.transition-transform {
+    transition-property:
+    transform !important;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1) !important;
     transition-duration:
-    700ms !important;
+    150ms !important;
 }
 
 .duration-300 {
@@ -1426,14 +1401,14 @@ img {
     300ms !important;
 }
 
+.duration-700 {
+    transition-duration:
+    700ms !important;
+}
+
 .ease-in-out {
     transition-timing-function:
     cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.hover\:bg-\[url\(\.\.\/img\/website\/altigen_koyu\.svg\)\]:hover {
-    background-image:
-    url(../img/website/altigen_koyu.svg) !important;
 }
 
 .hover\:bg-\[url\(\.\.\/img\/website\/altigen_acik\.svg\)\]:hover {
@@ -1481,11 +1456,6 @@ img {
     .md\:top-\[5vh\] {
         top:
     5vh !important;
-    }
-
-    .md\:m-10 {
-        margin:
-    2.5rem !important;
     }
 
     .md\:mx-4 {
@@ -1568,6 +1538,14 @@ img {
         line-height:
     1 !important;
     }
+
+    @media not all and (min-width: 1024px) {
+
+        .md\:max-lg\:m-10 {
+            margin:
+    2.5rem !important;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1575,6 +1553,11 @@ img {
     .lg\:invisible {
         visibility:
     hidden !important;
+    }
+
+    .lg\:m-24 {
+        margin:
+    6rem !important;
     }
 
     .lg\:block {
