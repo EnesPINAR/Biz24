@@ -802,6 +802,11 @@ img {
     100vh !important;
 }
 
+.w-1\/2 {
+    width:
+    50% !important;
+}
+
 .w-10 {
     width:
     2.5rem !important;
@@ -1071,6 +1076,11 @@ img {
     rgb(29 29 29 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-gray-900\/50 {
+    background-color:
+    rgb(17 24 39 / 0.5) !important;
+}
+
 .bg-indigo-500 {
     --tw-bg-opacity:
     1 !important;
@@ -1095,6 +1105,11 @@ img {
 .bg-white\/30 {
     background-color:
     rgb(255 255 255 / 0.3) !important;
+}
+
+.bg-white\/50 {
+    background-color:
+    rgb(255 255 255 / 0.5) !important;
 }
 
 .bg-zinc-500 {

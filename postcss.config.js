@@ -9,7 +9,8 @@ module.exports = {
           /body/,
           /inset/,
           /translate/,
-          /transform/
+          /transform/,
+          /\//
         ],
       },
       extractors: [
