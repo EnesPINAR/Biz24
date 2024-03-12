@@ -630,11 +630,11 @@ img {
     2.25rem !important;
 }
 
-.my-14 {
+.my-32 {
     margin-top:
-    3.5rem !important;
+    8rem !important;
     margin-bottom:
-    3.5rem !important;
+    8rem !important;
 }
 
 .mb-10 {
@@ -662,6 +662,11 @@ img {
     1rem !important;
 }
 
+.mb-5 {
+    margin-bottom:
+    1.25rem !important;
+}
+
 .mb-8 {
     margin-bottom:
     2rem !important;
@@ -670,6 +675,11 @@ img {
 .mb-\[60px\] {
     margin-bottom:
     60px !important;
+}
+
+.mr-5 {
+    margin-right:
+    1.25rem !important;
 }
 
 .mt-10 {
@@ -684,16 +694,6 @@ img {
 
 .mt-5 {
     margin-top:
-    1.25rem !important;
-}
-
-.mr-5 {
-    margin-right:
-    1.25rem !important;
-}
-
-.mb-5 {
-    margin-bottom:
     1.25rem !important;
 }
 
@@ -912,6 +912,11 @@ img {
 .w-screen {
     width:
     100vw !important;
+}
+
+.max-w-\[150px\] {
+    max-width:
+    150px !important;
 }
 
 .shrink-0 {
@@ -1202,6 +1207,13 @@ img {
     1.5rem !important;
 }
 
+.px-14 {
+    padding-left:
+    3.5rem !important;
+    padding-right:
+    3.5rem !important;
+}
+
 .pb-10 {
     padding-bottom:
     2.5rem !important;
@@ -1328,11 +1340,6 @@ img {
     cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-.hover\:bg-white\/50:hover {
-    background-color:
-    rgb(255 255 255 / 0.5) !important;
-}
-
 .hover\:bg-zinc-500:hover {
     --tw-bg-opacity:
     1 !important;
@@ -1393,6 +1400,11 @@ img {
 
 @media (min-width: 768px) {
 
+    .md\:m-10 {
+        margin:
+    2.5rem !important;
+    }
+
     .md\:mx-4 {
         margin-left:
     1rem !important;
@@ -1405,6 +1417,11 @@ img {
     0.5rem !important;
     }
 
+    .md\:h-12 {
+        height:
+    3rem !important;
+    }
+
     .md\:h-72 {
         height:
     18rem !important;
@@ -1413,11 +1430,6 @@ img {
     .md\:h-96 {
         height:
     24rem !important;
-    }
-
-    .md\:h-12 {
-        height:
-    3rem !important;
     }
 
     .md\:w-12 {
@@ -1432,11 +1444,11 @@ img {
     0px !important;
     }
 
-    .md\:px-16 {
+    .md\:px-20 {
         padding-left:
-    4rem !important;
+    5rem !important;
         padding-right:
-    4rem !important;
+    5rem !important;
     }
 
     .md\:text-2xl {
@@ -1451,13 +1463,6 @@ img {
     1.875rem !important;
         line-height:
     2.25rem !important;
-    }
-
-    .md\:text-4xl {
-        font-size:
-    2.25rem !important;
-        line-height:
-    2.5rem !important;
     }
 
     .md\:text-5xl {
@@ -1497,6 +1502,13 @@ img {
     .lg\:hidden {
         display:
     none !important;
+    }
+
+    .lg\:text-xl {
+        font-size:
+    1.25rem !important;
+        line-height:
+    1.75rem !important;
     }
 
     .lg\:transition {
