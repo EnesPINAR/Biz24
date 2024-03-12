@@ -731,6 +731,11 @@ img {
     60px !important;
 }
 
+.ml-2 {
+    margin-left:
+    0.5rem !important;
+}
+
 .mr-5 {
     margin-right:
     1.25rem !important;
@@ -749,11 +754,6 @@ img {
 .mt-5 {
     margin-top:
     1.25rem !important;
-}
-
-.ml-2 {
-    margin-left:
-    0.5rem !important;
 }
 
 .block {
@@ -829,11 +829,6 @@ img {
 .h-\[100px\] {
     height:
     100px !important;
-}
-
-.h-\[10vh\] {
-    height:
-    10vh !important;
 }
 
 .h-\[150px\] {
@@ -1191,34 +1186,14 @@ img {
     0.05 !important;
 }
 
-.bg-gradient-to-r {
-    background-image:
-    linear-gradient(to right, var(--tw-gradient-stops)) !important;
-}
-
-.bg-\[url\(img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\/img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(./img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\.\/img\/website\/altigen\.svg\)\] {
-    background-image:
-    url(../img/website/altigen.svg) !important;
-}
-
-.bg-\[url\(\.\.\/img\/website\/altigen_acik\.svg\)\] {
-    background-image:
-    url(../img/website/altigen_acik.svg) !important;
-}
-
 .bg-\[url\(\.\.\/img\/website\/altigen_koyu\.svg\)\] {
     background-image:
     url(../img/website/altigen_koyu.svg) !important;
+}
+
+.bg-gradient-to-r {
+    background-image:
+    linear-gradient(to right, var(--tw-gradient-stops)) !important;
 }
 
 .from-purple-500 {
@@ -1403,15 +1378,6 @@ img {
     #171717 !important;
 }
 
-.transition-transform {
-    transition-property:
-    transform !important;
-    transition-timing-function:
-    cubic-bezier(0.4, 0, 0.2, 1) !important;
-    transition-duration:
-    150ms !important;
-}
-
 .transition-all {
     transition-property:
     all !important;
@@ -1421,9 +1387,13 @@ img {
     150ms !important;
 }
 
-.duration-700 {
+.transition-transform {
+    transition-property:
+    transform !important;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1) !important;
     transition-duration:
-    700ms !important;
+    150ms !important;
 }
 
 .duration-300 {
@@ -1431,14 +1401,14 @@ img {
     300ms !important;
 }
 
+.duration-700 {
+    transition-duration:
+    700ms !important;
+}
+
 .ease-in-out {
     transition-timing-function:
     cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.hover\:bg-\[url\(\.\.\/img\/website\/altigen_koyu\.svg\)\]:hover {
-    background-image:
-    url(../img/website/altigen_koyu.svg) !important;
 }
 
 .hover\:bg-\[url\(\.\.\/img\/website\/altigen_acik\.svg\)\]:hover {
