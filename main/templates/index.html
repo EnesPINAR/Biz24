@@ -8,9 +8,13 @@
     {% load static %}
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <script defer src="{% static "js/countdown.js" %}"></script>
+    <script defer src="{% static "js/uparrow.js" %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>BİZ2024</title>
   </head>
   <body class="relative overflow-x-hidden text-white bg-neutral-900 font-['olneylight']">
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
     <nav class="flex justify-between items-center py-6 px-8 h-[10vh] bg-zinc-500 bg-opacity-5">
       <a href="#">
