@@ -697,6 +697,11 @@ img {
     1.25rem !important;
 }
 
+.ml-2 {
+    margin-left:
+    0.5rem !important;
+}
+
 .block {
     display:
     block !important;
@@ -1179,6 +1184,13 @@ img {
     2.5rem !important;
 }
 
+.px-14 {
+    padding-left:
+    3.5rem !important;
+    padding-right:
+    3.5rem !important;
+}
+
 .px-4 {
     padding-left:
     1rem !important;
@@ -1205,13 +1217,6 @@ img {
     1.5rem !important;
     padding-bottom:
     1.5rem !important;
-}
-
-.px-14 {
-    padding-left:
-    3.5rem !important;
-    padding-right:
-    3.5rem !important;
 }
 
 .pb-10 {
