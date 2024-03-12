@@ -15,13 +15,75 @@
     <button id="to-top-button" onclick="goToTop()" title="Go To Top"
         class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
-    <nav class="flex justify-between items-center py-6 px-8 h-[10vh] bg-zinc-500 bg-opacity-5">
-      <a href="#">
-          <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo">
-      </a>
-      <a class="shrink-0" href="" title="TÜBİT">
-        <img src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
-      </a>
+    <nav class="flex flex-col h-[10vh] bg-zinc-500 bg-opacity-5">
+      <div class="flex items-center justify-between px-8 py-6">
+        <a href="#">
+            <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo">
+        </a>
+        <div class="hidden lg:block">
+          <ul>
+            <li class="inline mx-4">
+              <a href="#announcements">Duyurular</a>
+            </li>
+            <li class="inline mx-4">
+              <a href="#oldevents">Önceki Etkinlikler</a>
+            </li>
+            <li class="inline mx-4">
+              <a href="#about">Hakkında</a>
+            </li>
+            <li class="inline mx-4">
+              <a href="#ourteam">Ekip</a>
+            </li>
+            <li class="inline mx-4">
+              <a href="#sponsors">Sponsorlar</a>
+            </li>
+          </ul>
+        </div>
+        <a class="hidden shrink-0 lg:block" href="" title="TÜBİT">
+          <img src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
+        </a>
+        <button class="lg:hidden flex items-center justify-center w-[60px] h-[60px]" data-drawer-target="hamburger-menu" data-drawer-show="hamburger-menu" data-drawer-placement="top" data-drawer-body-scrolling="false" type="button">
+            <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+            </svg>
+        </button>
+      </div>
+      <div id="hamburger-menu" class="fixed top-0 left-0 right-0 z-40 w-full h-screen transition-transform -translate-y-full bg-blue-950" tabindex="-1">
+        <div class="flex flex-col h-full">
+          <div class="flex items-center justify-between px-8 py-6">
+            <a href="#">
+                <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo">
+            </a>
+            <button class="lg:hidden flex items-center justify-center w-[60px] h-[60px]" data-drawer-hide="hamburger-menu" type="button">
+              <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6m0 12L6 6"/>
+              </svg>
+            </button>
+          </div>
+            <ul class="flex flex-col items-center py-16 text-xl justify-evenly grow">
+              <li class="w-[60vw] mb-10 grow">
+                <a data-drawer-hide="hamburger-menu" class="flex items-center justify-center w-full h-full" href="#announcements"><span>Duyurular</span></a>
+              </li>
+              <li class="w-[60vw] mb-10 grow">
+                <a data-drawer-hide="hamburger-menu" class="flex items-center justify-center w-full h-full" href="#oldevents"><span>Önceki Etkinlikler</span></a>
+              </li>
+              <li class="w-[60vw] mb-10 grow">
+                <a data-drawer-hide="hamburger-menu" class="flex items-center justify-center w-full h-full" href="#about"><span>Hakkında</span></a>
+              </li>
+              <li class="w-[60vw] mb-10 grow">
+                <a data-drawer-hide="hamburger-menu" class="flex items-center justify-center w-full h-full" href="#ourteam"><span>Ekip</span></a>
+              </li>
+              <li class="w-[60vw] grow">
+                <a data-drawer-hide="hamburger-menu" class="flex items-center justify-center w-full h-full" href="#sponsors"><span>Sponsorlar</span></a>
+              </li>
+            </ul>
+          <div class="flex justify-center mb-12">
+            <a class="shrink-0" href="" title="TÜBİT">
+              <img src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
     <section class="flex flex-col items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
@@ -49,12 +111,12 @@
             </div>
         </div>
       </div>
-      <a class="relative flex flex-col items-center top-[10vh] justify-evenly" href="#content" title="Sayfanın içeriğine git">
+      <a class="relative flex flex-col items-center top-[10vh] justify-evenly" href="#announcements" title="Sayfanın içeriğine git">
           <p class="mb-4 text-sm lg:invisible">Daha fazlası için kaydır</p>
           <svg class="h-auto w-9" width="114.42" height="61.12" viewBox="0 0 30.27 16.17" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="m92.12 151.59 14.1 13.98 14.17-14.17" transform="translate(-91.12 -150.4)"/></svg>
       </a>
     </section>
-    <section class="my-14" id="content">
+    <section class="my-14" id="announcements">
       <h1 class="pb-10 text-3xl text-center md:text-4xl">Duyurular</h1>
       <div class="relative w-full" data-carousel="slide">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -99,7 +161,7 @@
           </button>
       </div>
     </section>
-    <section class="my-14">
+    <section class="my-14" id="oldevents">
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl text-wrap md:px-0">Önceki Etkinliklerimizden</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
@@ -122,8 +184,8 @@
         </div>
       </div>
     </section>
-    <section class="my-14">
-      <h1 class="pb-10 text-3xl text-center md:text-4xl">TÜBİT Hakkında</h1>
+    <section class="my-14" id="about">
+      <h1 class="pb-10 text-3xl text-center md:text-4xl">Bilişim ve İnovasyon Zirvesi Hakkında</h1>
       <p class="px-10 md:px-16">Nemo error dolores rerum aspernatur et repellat assumenda quae.  Dolor voluptas nostrum autem eaque laudantium voluptates aut.  Reprehenderit autem quisquam ut. Excepturi iste vel deserunt. Veniam  ipsa optio qui ex fugit iure recusandae. Non rem hic commodi autem  ratione reiciendis.
 Molestiae voluptate voluptatem doloribus. Reprehenderit eveniet  libero sunt asperiores dolorem fugiat cumque nulla. Rerum incidunt at  dicta ea porro. Ipsa ut vel provident eveniet dolorem et rem aperiam.
 Qui accusamus delectus qui. Provident quam quia aut. A  explicabo totam mollitia quia. Quo iure omnis soluta esse voluptatibus  vel totam harum. Cupiditate et maiores totam quisquam sint dolorum  debitis.
@@ -131,23 +193,23 @@ Distinctio temporibus sapiente officiis dignissimos dolorum.  Tenetur repellendu
 Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit laboriosam et praesentium. Culpa omnis temporibus dolores  temporibus qui qui.
       </p>
     </section>
-    <section class="my-14">
+    <section class="my-14" id="ourteam">
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Yönetim</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-            <img src="{% static 'img/people/murat_topaloglu.webp' %}" alt="murat" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/murat_topaloglu.webp' %}" alt="Murat TOPALOĞLU" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Murat TOPALOĞLU<br/>Doç. Dr.</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/egemen_tekkanat.webp' %}" alt="egemen" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/egemen_tekkanat.webp' %}" alt="Egemen TEKKANAT" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Egemen TEKKANAT<br/>Dr. Öğr. Üyesi</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/harun_ozkisi.webp' %}" alt="harun" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/harun_ozkisi.webp' %}" alt="Harun ÖZKİŞİ" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Harun ÖZKİŞİ<br/>Dr. Öğr. Üyesi</p>
         </div>
           <div class="m-5">
-            <img src="{% static 'img/people/onur_kara.webp' %}" alt="onur" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/onur_kara.webp' %}" alt="Onur KARA" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Onur KARA<br/>Öğr. Gör.</p>
         </div>
       </div>
@@ -156,19 +218,19 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Ekibimiz</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-            <img src="{% static 'img/people/arif_tolga_demirel.webp' %}" alt="tolga" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/arif_tolga_demirel.webp' %}" alt="Arif Tolga DEMİREL" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Arif Tolga DEMİREL<br/>Başkan</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/emirhan_narin.webp' %}" alt="emirhan" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/emirhan_narin.webp' %}" alt="Emirhan NARİN" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Emirhan NARİN<br/>Başkan Yrd.</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/caner_yildiz.webp' %}" alt="caner" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/caner_yildiz.webp' %}" alt="Caner YILDIZ" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Caner YILDIZ<br/>İletişim Başkanı</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/enes_pinar.webp' %}" alt="enes" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/enes_pinar.webp' %}" alt="Enes PINAR" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Enes PINAR<br/>BST Akademi Başkanı</p>
         </div>
         <div class="m-5">
@@ -176,12 +238,12 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
             <p class="text-center">Kaan <br/>Sosyal Medya</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/people/mehti_boz.webp' %}" alt="mehti" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
+            <img src="{% static 'img/people/mehti_boz.webp' %}" alt="Mehti BOZ" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Mehti BOZ<br/>Sunucu</p>
         </div>
       </div>
     </section>
-    <section class="mb-20 mt-14">
+    <section class="mb-20 mt-14" id="sponsors">
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Sponsorlar</h1>
         <div class="flex justify-center w-full">
             <h1 class="px-10 pb-10 text-2xl text-center text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text md:text-3xl md:px-0 w-fit">Ana Sponsor</h1>
@@ -233,5 +295,6 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <p class="mt-10 text-center">Tüm Hakları Saklıdır. TÜBİT 2024</p>
     </footer>
     <script src="{% static "js/carousel.js" %}"></script>
+    <script src="{% static "js/drawer.js" %}"></script>
   </body>
 </html>
