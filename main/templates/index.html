@@ -12,17 +12,17 @@
   </head>
   <body class="relative overflow-x-hidden text-white bg-neutral-900 font-['olneylight']">
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
-    <nav class="flex justify-between items-center py-6 px-8 h-[15vh] bg-zinc-500 bg-opacity-5">
+    <nav class="flex justify-between items-center py-6 px-8 h-[10vh] bg-zinc-500 bg-opacity-5">
       <a href="#">
-          <img src="{% static "img/biz-logo.svg" %}" alt="biz24logo" class="h-[100px]">
+          <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo">
       </a>
       <a class="shrink-0" href="" title="TÜBİT">
-        <img src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
+        <img src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT" class="w-[100px] h-[60px]">
       </a>
     </nav>
     <section class="flex flex-col items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
-        <h1 class="text-3xl mb-[60px] md:text-5xl">BİZ2024</h1>
+        <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo" class="h-[100px] mb-[60px]">
         <h1 class="text-3xl md:text-5xl" id="eventCountdownTitle">Etkinliğe Kalan</h1>
         <div class="flex flex-row items-center px-4" id="eventCountdown">
             <div class="flex flex-col">
@@ -56,19 +56,19 @@
       <div class="relative w-full" data-carousel="slide">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                  <img src="{% static "img/x.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="{% static "img/website/socials/x.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{% static "img/instagram.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="{% static "img/website/socials/instagram.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{% static "img/linkedin.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="{% static "img/website/socials/linkedin.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{% static "img/youtube.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="{% static "img/website/socials/youtube.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="{% static "img/tubit-logo.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="{% static "img/website/tubit-logo.svg" %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
           </div>
           <div class="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
@@ -99,23 +99,23 @@
     <section class="my-14">
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl text-wrap md:px-0">Önceki Etkinliklerimizden</h1>
       <div class="flex flex-wrap items-center justify-evenly">
-        <div class="m-5">
-            <img src="{% static 'img/biz15.jpg' %}" alt="biz15" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/biz15.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2015" class="w-[300px]">
         </div>
-          <div class="m-5">
-            <img src="{% static 'img/biz17.jpg' %}" alt="biz17" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/biz17.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2017" class="w-[300px]">
         </div>
-          <div class="m-5">
-            <img src="{% static 'img/biz18.jpg' %}" alt="biz18" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/biz18.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2018" class="w-[300px]">
         </div>
-          <div class="m-5">
-            <img src="{% static 'img/biz19.jpg' %}" alt="biz19" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/biz19.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2019" class="w-[300px]">
         </div>
-          <div class="m-5">
-            <img src="{% static 'img/yazilimdangirisimcilige.jpg' %}" alt="yazilimdan girisimcilige" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/yg24.webp' %}" alt="Yazılımcılıktan Girişimciliğe 2024" class="w-[300px]">
         </div>
-          <div class="m-5">
-            <img src="{% static 'img/kariyer.jpg' %}" alt="kariyer gunleri" class="w-[300px]">
+        <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:delay-200 lg:hover:scale-125">
+            <img src="{% static 'img/old-events/k18.webp' %}" alt="Kariyer Günleri 2018" class="w-[300px]">
         </div>
       </div>
     </section>
@@ -132,19 +132,19 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Yönetim</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-            <img src="{% static 'img/murat.jpg' %}" alt="murat" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/murat_topaloglu.webp' %}" alt="murat" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Murat TOPALOĞLU<br/>Doç. Dr.</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/egemen.jpg' %}" alt="egemen" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/egemen_tekkanat.webp' %}" alt="egemen" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Egemen TEKKANAT<br/>Dr. Öğr. Üyesi</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/harun.jpg' %}" alt="harun" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/harun_ozkisi.webp' %}" alt="harun" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Harun ÖZKİŞİ<br/>Dr. Öğr. Üyesi</p>
         </div>
           <div class="m-5">
-            <img src="{% static 'img/onur.jpg' %}" alt="onur" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/onur_kara.webp' %}" alt="onur" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Onur KARA<br/>Öğr. Gör.</p>
         </div>
       </div>
@@ -153,27 +153,27 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
       <h1 class="px-10 pb-10 text-3xl text-center md:text-4xl md:px-0">Ekibimiz</h1>
       <div class="flex flex-wrap items-center justify-evenly">
         <div class="m-5">
-            <img src="{% static 'img/tolga.jpg' %}" alt="tolga" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/arif_tolga_demirel.webp' %}" alt="tolga" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Arif Tolga DEMİREL<br/>Başkan</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/emirhan.jpg' %}" alt="emirhan" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/emirhan_narin.webp' %}" alt="emirhan" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Emirhan NARİN<br/>Başkan Yrd.</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/caner.jpg' %}" alt="caner" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/caner_yildiz.webp' %}" alt="caner" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Caner YILDIZ<br/>İletişim Başkanı</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/enes.jpg' %}" alt="enes" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/enes_pinar.webp' %}" alt="enes" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Enes PINAR<br/>BST Akademi Başkanı</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/kaan.jpg' %}" alt="kaan" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/kaan.webp' %}" alt="kaan" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Kaan <br/>Sosyal Medya</p>
         </div>
         <div class="m-5">
-            <img src="{% static 'img/mehti.jpg' %}" alt="mehti" class="w-[150px] h-[150px] rounded-full mb-4">
+            <img src="{% static 'img/people/mehti_boz.webp' %}" alt="mehti" class="w-[150px] h-[150px] rounded-full mb-4 outline outline-neutral-900 outline-width-4 outline-offset-[-1px]">
             <p class="text-center">Mehti BOZ<br/>Sunucu</p>
         </div>
       </div>
@@ -184,23 +184,23 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
             <h1 class="px-10 pb-10 text-2xl text-center text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text md:text-3xl md:px-0 w-fit">Ana Sponsor</h1>
         </div>
         <div class="flex flex-wrap items-center mb-8 justify-evenly">
-            <img class="m-5 w-[320px]" src="{% static "img/LOGO - Renkas.svg" %}" alt="renkas">
+            <img class="m-5 w-[320px]" src="{% static "img/sponsors/renkas.svg" %}" alt="renkas">
       </div>
       <h1 class="px-10 pb-10 text-2xl text-center text-yellow-400 md:text-3xl md:px-0">Altın</h1>
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
-        <img class="m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
+        <img class="m-5" src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT">
       </div>
       <h1 class="px-10 pb-10 text-2xl text-center text-zinc-400 md:text-3xl md:px-0">Gümüş</h1>
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
-        <img class="m-5 w-[320px]" src="{% static "img/LOGO - Evren Un.png" %}" alt="evren un">
+        <img class="m-5 w-[320px]" src="{% static "img/sponsors/evrenun.svg" %}" alt="evren un">
       </div>
       <h1 class="px-10 pb-10 text-2xl text-center text-orange-300 md:text-3xl md:px-0">Bronz</h1>
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
-        <img class="m-5 w-[320px]" src="{% static "img/LOGO - Can Medikal.png" %}" alt="can medikal">
+        <img class="m-5 w-[320px]" src="{% static "img/sponsors/canmedikal.svg" %}" alt="can medikal">
       </div>
         <h1 class="px-10 pb-10 text-2xl text-center text-white md:text-3xl md:px-0">Yemek Sponsorları</h1>
       <div class="flex flex-wrap items-center mb-8 justify-evenly">
-        <img class="m-5 w-[320px]" src="{% static "img/LOGO - Gölet.png" %}" alt="gölet">
+        <img class="m-5 w-[320px]" src="{% static "img/sponsors/golet.webp" %}" alt="gölet">
       </div>
     </section>
     <footer class="w-screen py-6 h-96 md:h-72 bg-footer">
@@ -208,23 +208,23 @@ Et minima itaque et sequi non. Nihil maxime quaerat ratione.  Cumque fugit labor
         <div class="mt-5 mx-9">
           <div class="flex justify-around">
             <a class="m-3" href="https://twitter.com/kycubyo_tubit" title="TÜBİT Twitter sayfasını ziyaret et">
-              <img class="w-12 h-12" src="{% static "img/x.svg" %}" alt="X">
+              <img class="w-12 h-12" src="{% static "img/website/socials/x.svg" %}" alt="X">
             </a>
             <a class="m-3" href="https://www.instagram.com/tubit.tu/" title="TÜBİT Instagram sayfasını ziyaret et">
-              <img class="w-12 h-12" src="{% static "img/instagram.svg" %}" alt="Instagram">
+              <img class="w-12 h-12" src="{% static "img/website/socials/instagram.svg" %}" alt="Instagram">
             </a>
             <a class="m-3" href="https://www.linkedin.com/company/t%C3%BCbi%CC%87t/" title="TÜBİT LinkedIn sayfasını ziyaret et">
-              <img class="w-12 h-12" src="{% static "img/linkedin.svg" %}" alt="LinkedIn">
+              <img class="w-12 h-12" src="{% static "img/website/socials/linkedin.svg" %}" alt="LinkedIn">
             </a>
             <a class="m-3" href="https://www.youtube.com/@kycubyo_tubit" title="TÜBİT Youtube sayfasını ziyaret et">
-              <img class="w-12 h-12" src="{% static "img/youtube.svg" %}" alt="Youtube">
+              <img class="w-12 h-12" src="{% static "img/website/socials/youtube.svg" %}" alt="Youtube">
             </a>
           </div>
         </div>
         <div class="flex items-center mt-5 justify-evenly mx-9">
-          <img class="w-[116px] h-[66px] m-5" src="{% static "img/tubit-logo.svg" %}" alt="TÜBİT">
+          <img class="w-[116px] h-[66px] m-5" src="{% static "img/website/tubit-logo.svg" %}" alt="TÜBİT">
           <div class="w-px bg-white h-9"></div>
-          <img class="w-[100px] h-[100px] m-5" src="{% static "img/trakya-logo.svg" %}" alt="Trakya Üniversitesi">
+          <img class="w-[100px] h-[100px] m-5" src="{% static "img/website/trakya-logo.svg" %}" alt="Trakya Üniversitesi">
         </div>
       </div>
       <p class="mt-10 text-center">Tüm Hakları Saklıdır. TÜBİT 2024</p>

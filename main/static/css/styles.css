@@ -237,8 +237,7 @@ Prevent resizing textareas horizontally by default.
 Set the default cursor for buttons.
 */
 
-button,
-[role="button"] {
+button {
   cursor: pointer;
 }
 
@@ -699,6 +698,11 @@ img {
     10vh !important;
 }
 
+.h-\[150px\] {
+    height:
+    150px !important;
+}
+
 .h-\[60px\] {
     height:
     60px !important;
@@ -767,6 +771,28 @@ img {
 .w-\[150\%\] {
     width:
     150% !important;
+}
+
+.w-\[150px\] {
+    width:
+    150px !important;
+}
+
+.w-\[300px\] {
+    width:
+    300px !important;
+}
+
+.w-\[320px\] {
+    width:
+    320px !important;
+}
+
+.w-fit {
+    width:
+    -moz-fit-content !important;
+    width:
+    fit-content !important;
 }
 
 .w-full {
@@ -951,6 +977,39 @@ img {
     0.05 !important;
 }
 
+.bg-gradient-to-r {
+    background-image:
+    linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.from-purple-500 {
+    --tw-gradient-from:
+    #9061F9 var(--tw-gradient-from-position) !important;
+    --tw-gradient-to:
+    rgb(144 97 249 / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops:
+    var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.via-pink-500 {
+    --tw-gradient-to:
+    rgb(231 70 148 / 0)  var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops:
+    var(--tw-gradient-from), #E74694 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.to-yellow-500 {
+    --tw-gradient-to:
+    #C27803 var(--tw-gradient-to-position) !important;
+}
+
+.bg-clip-text {
+    -webkit-background-clip:
+    text !important;
+            background-clip:
+    text !important;
+}
+
 .px-10 {
     padding-left:
     2.5rem !important;
@@ -1038,6 +1097,11 @@ img {
     rgb(253 186 140 / var(--tw-text-opacity)) !important;
 }
 
+.text-transparent {
+    color:
+    transparent !important;
+}
+
 .text-white {
     --tw-text-opacity:
     1 !important;
@@ -1057,6 +1121,21 @@ img {
     1 !important;
     color:
     rgb(161 161 170 / var(--tw-text-opacity)) !important;
+}
+
+.outline {
+    outline-style:
+    solid !important;
+}
+
+.outline-offset-\[-1px\] {
+    outline-offset:
+    -1px !important;
+}
+
+.outline-neutral-900 {
+    outline-color:
+    #171717 !important;
 }
 
 .transition-transform {
@@ -1199,6 +1278,46 @@ img {
     .lg\:invisible {
         visibility:
     hidden !important;
+    }
+
+    .lg\:transition {
+        transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+        transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+        transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+        transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1) !important;
+        transition-duration:
+    150ms !important;
+    }
+
+    .lg\:delay-200 {
+        transition-delay:
+    200ms !important;
+    }
+
+    .lg\:ease-in {
+        transition-timing-function:
+    cubic-bezier(0.4, 0, 1, 1) !important;
+    }
+
+    .lg\:hover\:scale-125:hover {
+        --tw-scale-x:
+    1.25 !important;
+        --tw-scale-y:
+    1.25 !important;
+        transform:
+    translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .xl\:basis-\[350px\] {
+        flex-basis:
+    350px !important;
     }
 }
 
