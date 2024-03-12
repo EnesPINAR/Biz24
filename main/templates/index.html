@@ -12,8 +12,13 @@
     <title>BİZ2024</title>
   </head>
   <body class="relative overflow-x-hidden text-white bg-neutral-900 font-['olneylight']">
-    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
-        class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
+    <button id="to-top-button" onclick="goToTop()" title="En üste git" class="fixed z-40 hidden w-16 h-16 text-3xl text-white border-0 rounded-full bg-zinc-600 bottom-8 right-8 hover:bg-zinc-500 focus:ring-4 focus:ring-white focus:outline-none">
+      <div class="flex items-center justify-center w-full h-full">
+        <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+        </svg>
+      </div>
+    </button>
     <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
     <nav class="flex flex-col h-[10vh] bg-zinc-500 bg-opacity-5">
       <div class="flex items-center justify-between px-8 py-6">
@@ -87,7 +92,17 @@
     </nav>
     <section class="flex flex-col items-center justify-center h-[90vh]">
       <div class="flex flex-col items-center mb-36">
-        <img src="{% static "img/website/biz-logo.svg" %}" alt="biz24logo" class="h-[100px] mb-[60px]">
+        <img src="{% static "img/website/biz-logo.svg" %}" alt="BİZ24 Logo" class="h-[100px] mb-[60px]">
+        <div class="flex mb-5">
+          <svg class="w-8 h-8 text-white md:w-12 md:h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" clip-rule="evenodd"/>
+          </svg>
+          <h1 class="mr-5 text-3xl md:text-5xl">10.05.2024</h1>
+          <svg class="w-8 h-8 text-white md:w-12 md:h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
+          </svg>
+          <h1 class="text-3xl md:text-5xl">10.00</h1>
+        </div>
         <h1 class="text-3xl md:text-5xl" id="eventCountdownTitle">Etkinliğe Kalan</h1>
         <div class="flex flex-row items-center px-4" id="eventCountdown">
             <div class="flex flex-col">
