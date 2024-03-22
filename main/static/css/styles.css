@@ -681,13 +681,6 @@ video {
     0.5rem !important;
 }
 
-.mx-4 {
-    margin-left:
-    1rem !important;
-    margin-right:
-    1rem !important;
-}
-
 .mx-9 {
     margin-left:
     2.25rem !important;
@@ -700,6 +693,13 @@ video {
     8rem !important;
     margin-bottom:
     8rem !important;
+}
+
+.mx-5 {
+    margin-left:
+    1.25rem !important;
+    margin-right:
+    1.25rem !important;
 }
 
 .mb-10 {
@@ -1642,9 +1642,23 @@ video {
 
 @media (min-width: 1280px) {
 
+    .xl\:mx-8 {
+        margin-left:
+    2rem !important;
+        margin-right:
+    2rem !important;
+    }
+
     .xl\:basis-\[350px\] {
         flex-basis:
     350px !important;
+    }
+
+    .xl\:text-xl {
+        font-size:
+    1.25rem !important;
+        line-height:
+    1.75rem !important;
     }
 }
 
