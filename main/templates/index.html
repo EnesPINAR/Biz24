@@ -12,6 +12,11 @@
     <title>BİZ2024</title>
   </head>
   <body class="relative overflow-x-hidden text-white bg-neutral-900 font-['olneylight']">
+    <div id="bgVideo" class="absolute top-0 left-0 w-full h-[100vh]">
+      <video autoplay muted loop class="absolute top-0 left-0 object-cover w-full h-full -z-10">
+          <source src="{% static "video/bg.webm" %}" type="video/webm">
+      </video>
+    </div>
     <button id="to-top-button" onclick="goToTop()" title="En üste git" class="fixed z-40 hidden w-16 h-16 text-3xl text-white border-0 bottom-8 right-8 bg-[url(../img/website/altigen_koyu.svg)] hover:bg-[url(../img/website/altigen_acik.svg)] bg-cover transition-all duration-300">
       <div class="flex items-center justify-center w-full h-full">
         <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -19,7 +24,7 @@
         </svg>
       </div>
     </button>
-    <div class="bg-grad w-[150%] h-screen absolute -z-10"></div>
+    <div class="bg-grad w-[150%] h-screen absolute -z-20"></div>
     <nav class="flex flex-col bg-zinc-500 bg-opacity-5">
       <div class="flex items-center justify-between px-8 py-6">
         <a href="#">
@@ -27,19 +32,19 @@
         </a>
         <div class="hidden lg:block">
           <ul>
-            <li class="inline mx-4 hover:text-yellow-200 transition-all">
+            <li class="inline mx-4 transition-all hover:text-yellow-200">
               <a href="#announcements">Duyurular</a>
             </li>
-            <li class="inline mx-4 hover:text-yellow-200 transition-all">
+            <li class="inline mx-4 transition-all hover:text-yellow-200">
               <a href="#oldevents">Önceki Etkinlikler</a>
             </li>
-            <li class="inline mx-4 hover:text-yellow-200 transition-all">
+            <li class="inline mx-4 transition-all hover:text-yellow-200">
               <a href="#about">Hakkında</a>
             </li>
-            <li class="inline mx-4 hover:text-yellow-200 transition-all">
+            <li class="inline mx-4 transition-all hover:text-yellow-200">
               <a href="#ourteam">Ekip</a>
             </li>
-            <li class="inline mx-4 hover:text-yellow-200 transition-all">
+            <li class="inline mx-4 transition-all hover:text-yellow-200">
               <a href="#sponsors">Sponsorlar</a>
             </li>
           </ul>
@@ -97,7 +102,7 @@
           <svg class="w-8 h-8 text-white md:w-12 md:h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" clip-rule="evenodd"/>
           </svg>
-          <h1 class="ml-2 mr-5 text-3xl md:text-5xl">10.05.2024</h1>
+          <h1 class="ml-2 mr-5 text-3xl md:text-5xl">14.05.2024</h1>
           <svg class="w-8 h-8 text-white md:w-12 md:h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
           </svg>

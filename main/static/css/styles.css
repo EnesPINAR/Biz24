@@ -16,6 +16,10 @@
     src: url('../font/olney_light.woff') format('woff');
 }
 
+#bgVideo {
+    box-shadow: 0px -20px 30px 20px #171717 inset;
+}
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -259,7 +263,8 @@ Make sure disabled buttons don't get the pointer cursor.
 */
 
 img,
-svg {
+svg,
+video {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
 }
@@ -268,7 +273,8 @@ svg {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -643,6 +649,11 @@ img {
     -10 !important;
 }
 
+.-z-20 {
+    z-index:
+    -20 !important;
+}
+
 .z-30 {
     z-index:
     30 !important;
@@ -829,6 +840,11 @@ img {
 .h-\[100px\] {
     height:
     100px !important;
+}
+
+.h-\[100vh\] {
+    height:
+    100vh !important;
 }
 
 .h-\[150px\] {
@@ -1227,6 +1243,13 @@ img {
     text !important;
             background-clip:
     text !important;
+}
+
+.object-cover {
+    -o-object-fit:
+    cover !important;
+       object-fit:
+    cover !important;
 }
 
 .px-10 {

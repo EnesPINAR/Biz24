@@ -15,3 +15,7 @@
     src: url('../font/olney_light.woff2') format('woff2');
     src: url('../font/olney_light.woff') format('woff');
 }
+
+#bgVideo {
+    box-shadow: 0px -20px 30px 20px #171717 inset;
+}
