@@ -295,7 +295,7 @@ video {
   display: none;
 }
 
-[type='url'],[multiple] {
+[type='url'] {
     -webkit-appearance:
     none;
        -moz-appearance:
@@ -326,7 +326,7 @@ video {
     0 0 #0000;
 }
 
- [type='url']:focus, [multiple]:focus {
+ [type='url']:focus {
     outline:
     2px solid transparent;
     outline-offset:
@@ -357,23 +357,6 @@ video {
 ::-webkit-date-and-time-value {
     min-height:
     1.5em;
-}
-
-[multiple] {
-    background-image:
-    initial;
-    background-position:
-    initial;
-    background-repeat:
-    unset;
-    background-size:
-    initial;
-    padding-right:
-    0.75rem;
-    -webkit-print-color-adjust:
-    unset;
-            print-color-adjust:
-    unset;
 }
 
 *, ::before, ::after {
@@ -1075,6 +1058,41 @@ video {
     none !important;
 }
 
+@keyframes bounce {
+
+    0%, 100% {
+        transform:
+    translateY(-25%);
+        animation-timing-function:
+    cubic-bezier(0.8,0,1,1);
+    }
+
+    50% {
+        transform:
+    none;
+        animation-timing-function:
+    cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.animate-bounce {
+    animation:
+    bounce 1s infinite !important;
+}
+
+@keyframes pulse {
+
+    50% {
+        opacity:
+    .5;
+    }
+}
+
+.animate-pulse {
+    animation:
+    pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+
 .cursor-pointer {
     cursor:
     pointer !important;
@@ -1436,6 +1454,19 @@ video {
     150ms !important;
 }
 
+.transition {
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration:
+    150ms !important;
+}
+
 .duration-300 {
     transition-duration:
     300ms !important;
@@ -1444,6 +1475,11 @@ video {
 .duration-700 {
     transition-duration:
     700ms !important;
+}
+
+.duration-200 {
+    transition-duration:
+    200ms !important;
 }
 
 .ease-in-out {
@@ -1663,8 +1699,8 @@ video {
     150ms !important;
     }
 
-    .lg\:delay-200 {
-        transition-delay:
+    .lg\:duration-200 {
+        transition-duration:
     200ms !important;
     }
 
