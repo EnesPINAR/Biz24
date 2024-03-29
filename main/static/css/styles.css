@@ -1436,6 +1436,19 @@ video {
     #171717 !important;
 }
 
+.transition {
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+    transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration:
+    150ms !important;
+}
+
 .transition-all {
     transition-property:
     all !important;
@@ -1454,17 +1467,9 @@ video {
     150ms !important;
 }
 
-.transition {
-    transition-property:
-    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
-    transition-property:
-    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
-    transition-property:
-    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
-    transition-timing-function:
-    cubic-bezier(0.4, 0, 0.2, 1) !important;
+.duration-200 {
     transition-duration:
-    150ms !important;
+    200ms !important;
 }
 
 .duration-300 {
@@ -1475,11 +1480,6 @@ video {
 .duration-700 {
     transition-duration:
     700ms !important;
-}
-
-.duration-200 {
-    transition-duration:
-    200ms !important;
 }
 
 .ease-in-out {
