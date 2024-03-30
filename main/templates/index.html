@@ -179,29 +179,18 @@
       </a>
     </section>
   </div>
-  <section class="my-32" id="duyurular">
-    <h1 class="pb-10 text-4xl text-center md:text-5xl">Duyurular</h1>
-    <div class="relative w-full" data-carousel="slide">
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+  <div class="flex flex-col mx-auto my-0 max-w-screen-2xl">
+  <section class="mt-24 lg:mt-52 md:mx-12" id="duyurular">
+    <h1 class="pb-10 text-4xl font-bold text-center md:text-5xl">Duyurular</h1>
+    <div class="relative" data-carousel="slide">
+      <div class="relative h-[360px] md:h-[432px] lg:h-[576px] xl:[720px] overflow-hidden rounded-lg">
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="{% static "img/website/socials/x.svg" %}"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="{% static "img/announcements/d1.png" %}"
+            class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 sm:w-auto sm:h-full top-1/2 left-1/2" alt="...">
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{% static "img/website/socials/instagram.svg" %}"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{% static "img/website/socials/linkedin.svg" %}"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{% static "img/website/socials/youtube.svg" %}"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{% static "img/website/tubit-logo.svg" %}"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="{% static "img/announcements/d2.png" %}"
+            class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 sm:w-auto sm:h-full top-1/2 left-1/2" alt="...">
         </div>
       </div>
       <div class="absolute z-30 flex space-x-3 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
@@ -242,36 +231,36 @@
       </button>
     </div>
   </section>
-  <section class="my-32" id="etkinlikler">
-    <h1 class="px-10 pb-10 text-4xl text-center md:text-5xl text-wrap md:px-0">Önceki Etkinliklerimizden</h1>
+  <section class="mt-24 lg:mt-52" id="etkinlikler">
+    <h1 class="px-10 pb-10 text-4xl font-bold text-center md:text-5xl text-wrap md:px-0">Önceki Etkinliklerimiz</h1>
     <div class="flex flex-wrap items-center justify-evenly">
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/dgyz24.webp' %}" alt="Dijital Genç Yapay Zeka Ekosistemi Tanışma Toplantısı 2024" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/yg24.webp' %}" alt="Yazılımcılıktan Girişimciliğe 2024" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/biz19.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2019" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/k18.webp' %}" alt="Kariyer Günleri 2018" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/biz18.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2018" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/biz17.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2017" class="w-[300px]">
       </div>
-      <div class="m-5 xl:basis-[350px] lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
+      <div class="m-5 lg:transition lg:ease-in lg:duration-200 lg:hover:scale-125">
         <img src="{% static 'img/old-events/biz15.webp' %}" alt="Bilişim ve İnovasyon Zirvesi 2015" class="w-[300px]">
       </div>
     </div>
   </section>
-  <section class="my-32" id="biz24">
+  <section class="mt-24 lg:mt-52" id="biz24">
     <h1 class="px-10 pb-10 text-4xl text-center md:text-5xl text-wrap">Bilişim ve İnovasyon Zirvesi 2024</h1>
-    <div class="text-sm lg:text-xl px-14 md:px-20 lg:px-40">
-      <p class="text-center"><strong>Bilişim dünyasının öncü isimlerini bir araya getirmeye hazır mısınız?</strong></p><br />
+    <div class="text-sm lg:text-xl px-14">
+      <p class="text-xl font-light text-center lg:text-2xl font-orig-sans">Bilişim dünyasının öncü isimlerini bir araya getirmeye hazır mısınız?</p><br />
       <p>Tübit Kulübü olarak düzenlediğimiz BİZ24 etkinliği, bilişim inovasyonunun kalbinde üç gün boyunca sizlerle olacak.
       <strong>14-15-16 Mayıs</strong> tarihlerinde gerçekleşecek zirvemizde, sektörün önde gelen yazılımcıları ilk 
       iki günü dolduracak. Üçüncü gün ise okulumuzun değerli mezunlarının katılımıyla taçlanacak.<br /><br />
@@ -284,8 +273,8 @@
       </p>
     </div>
   </section>
-  <section class="my-32">
-    <h1 class="px-10 pb-10 text-4xl text-center md:text-5xl md:px-0">Yönetim</h1>
+  <section class="mt-24 lg:mt-52">
+    <h1 class="px-10 mb-10 text-4xl font-bold text-center md:text-5xl md:px-0">Yönetim</h1>
     <div class="flex flex-wrap items-center justify-evenly">
       <div class="m-5 md:max-lg:m-10 lg:m-24">
         <img src="{% static 'img/people/murat_topaloglu.webp' %}" alt="Murat TOPALOĞLU"
@@ -309,8 +298,8 @@
       </div>
     </div>
   </section>
-  <section class="my-32" id="ekibimiz">
-    <h1 class="px-10 pb-10 text-4xl text-center md:text-5xl md:px-0">Ekibimiz</h1>
+  <section class="mt-24 lg:mt-52" id="ekibimiz">
+    <h1 class="px-10 mb-10 text-4xl font-bold text-center md:text-5xl md:px-0">Ekibimiz</h1>
     <div class="flex flex-wrap items-center justify-evenly">
       <div class="m-5 md:max-lg:m-10 lg:m-24">
         <img src="{% static 'img/people/arif_tolga_demirel.webp' %}" alt="Arif Tolga DEMİREL"
@@ -364,8 +353,8 @@
       </div>
     </div>
   </section>
-  <section class="mb-20 mt-14" id="sponsorlar">
-    <h1 class="px-10 pb-10 text-4xl text-center md:text-5xl md:px-0">Sponsorlar</h1>
+  <section class="mt-24 mb-20" id="sponsorlar">
+    <h1 class="px-10 pb-10 text-4xl font-bold text-center md:text-5xl md:px-0">Sponsorlar</h1>
     <div class="flex justify-center w-full">
       <h1
         class="px-10 text-2xl text-center text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text md:text-3xl md:px-0 w-fit">
@@ -391,6 +380,7 @@
       <img class="m-5 w-[320px]" src="{% static "img/sponsors/golet.webp" %}" alt="gölet">
     </div>
   </section>
+  </div>
   <footer class="w-screen py-6 h-96 md:h-72 bg-footer">
     <div class="flex flex-wrap items-center justify-around">
       <div class="mt-5 mx-9">

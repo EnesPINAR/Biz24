@@ -705,11 +705,18 @@ video {
     2.25rem !important;
 }
 
-.my-32 {
+.mx-auto {
+    margin-left:
+    auto !important;
+    margin-right:
+    auto !important;
+}
+
+.my-0 {
     margin-top:
-    8rem !important;
+    0px !important;
     margin-bottom:
-    8rem !important;
+    0px !important;
 }
 
 .mb-10 {
@@ -762,9 +769,9 @@ video {
     2.5rem !important;
 }
 
-.mt-14 {
+.mt-24 {
     margin-top:
-    3.5rem !important;
+    6rem !important;
 }
 
 .mt-5 {
@@ -822,11 +829,6 @@ video {
     1rem !important;
 }
 
-.h-56 {
-    height:
-    14rem !important;
-}
-
 .h-8 {
     height:
     2rem !important;
@@ -855,6 +857,11 @@ video {
 .h-\[150px\] {
     height:
     150px !important;
+}
+
+.h-\[360px\] {
+    height:
+    360px !important;
 }
 
 .h-\[60px\] {
@@ -987,6 +994,11 @@ video {
 .max-w-\[150px\] {
     max-width:
     150px !important;
+}
+
+.max-w-screen-2xl {
+    max-width:
+    1536px !important;
 }
 
 .shrink-0 {
@@ -1339,6 +1351,11 @@ video {
     center !important;
 }
 
+.font-orig-sans {
+    font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
 .text-2xl {
     font-size:
     1.5rem !important;
@@ -1386,6 +1403,16 @@ video {
     0.75rem !important;
     line-height:
     1rem !important;
+}
+
+.font-bold {
+    font-weight:
+    700 !important;
+}
+
+.font-light {
+    font-weight:
+    300 !important;
 }
 
 .text-orange-300 {
@@ -1536,6 +1563,16 @@ video {
 
 @media (min-width: 640px) {
 
+    .sm\:h-full {
+        height:
+    100% !important;
+    }
+
+    .sm\:w-auto {
+        width:
+    auto !important;
+    }
+
     .sm\:text-3xl {
         font-size:
     1.875rem !important;
@@ -1560,6 +1597,13 @@ video {
 
 @media (min-width: 768px) {
 
+    .md\:mx-12 {
+        margin-left:
+    3rem !important;
+        margin-right:
+    3rem !important;
+    }
+
     .md\:mx-4 {
         margin-left:
     1rem !important;
@@ -1582,9 +1626,9 @@ video {
     18rem !important;
     }
 
-    .md\:h-96 {
+    .md\:h-\[432px\] {
         height:
-    24rem !important;
+    432px !important;
     }
 
     .md\:w-12 {
@@ -1597,13 +1641,6 @@ video {
     0px !important;
         padding-right:
     0px !important;
-    }
-
-    .md\:px-20 {
-        padding-left:
-    5rem !important;
-        padding-right:
-    5rem !important;
     }
 
     .md\:text-2xl {
@@ -1662,6 +1699,11 @@ video {
     6rem !important;
     }
 
+    .lg\:mt-52 {
+        margin-top:
+    13rem !important;
+    }
+
     .lg\:block {
         display:
     block !important;
@@ -1672,11 +1714,9 @@ video {
     none !important;
     }
 
-    .lg\:px-40 {
-        padding-left:
-    10rem !important;
-        padding-right:
-    10rem !important;
+    .lg\:h-\[576px\] {
+        height:
+    576px !important;
     }
 
     .lg\:text-xl {
@@ -1684,6 +1724,13 @@ video {
     1.25rem !important;
         line-height:
     1.75rem !important;
+    }
+
+    .lg\:text-2xl {
+        font-size:
+    1.5rem !important;
+        line-height:
+    2rem !important;
     }
 
     .lg\:transition {
@@ -1726,11 +1773,6 @@ video {
     2rem !important;
         margin-right:
     2rem !important;
-    }
-
-    .xl\:basis-\[350px\] {
-        flex-basis:
-    350px !important;
     }
 
     .xl\:text-xl {

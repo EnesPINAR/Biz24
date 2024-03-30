@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['"olneylight"', ...defaultTheme.fontFamily.sans],
+        'orig-sans': [...defaultTheme.fontFamily.sans]
       },
     },
   },
